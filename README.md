@@ -13,7 +13,7 @@ send push through Urban Airship easily for iOS
 To run the example project, clone the repo, and run 'UrbanPush-Demo/UrbanPush-Demo.xcodeproj.
 
 ## Requirements
-
+[UrbanAirShip SDK](www.urbanairship.com)
 ## Installation
 
 UrbanPush is available through [CocoaPods](http://cocoapods.org). To install

@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/iMokhles/UrbanPush"
   s.license          = 'MIT'
   s.author           = { "iMokhles" => "mokhleshussien@aol.com" }
-  s.source           = { :git => "https://github.com/iMokhles/UrbanPush.git", :tag => "v1.0" }
+  s.source           = { :git => "https://github.com/iMokhles/UrbanPush.git", :commit => "8af2b74260c5fb6ea282134aa18aee1adec2e20e", :tag => "v1.0" }
   s.social_media_url = 'https://twitter.com/iMokhles'
 
   s.platform     = :ios, '7.0'
