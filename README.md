@@ -3,7 +3,6 @@ send push through Urban Airship easily for iOS
 
 # UrbanPush
 
-[![CI Status](http://img.shields.io/travis/iMokhles/UrbanPush.svg?style=flat)](https://travis-ci.org/iMokhles/UrbanPush)
 [![Version](https://img.shields.io/cocoapods/v/UrbanPush.svg?style=flat)](http://cocoapods.org/pods/UrbanPush)
 [![License](https://img.shields.io/cocoapods/l/UrbanPush.svg?style=flat)](http://cocoapods.org/pods/UrbanPush)
 [![Platform](https://img.shields.io/cocoapods/p/UrbanPush.svg?style=flat)](http://cocoapods.org/pods/UrbanPush)
@@ -13,7 +12,7 @@ send push through Urban Airship easily for iOS
 To run the example project, clone the repo, and run 'UrbanPush-Demo/UrbanPush-Demo.xcodeproj.
 
 ## Requirements
-[UrbanAirShip SDK](www.urbanairship.com)
+[UrbanAirShip SDK](http://www.urbanairship.com)
 
 ## Installation
 
