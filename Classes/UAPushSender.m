@@ -18,7 +18,21 @@
 
 + (instancetype)sharedInstance {
     
-    return [[self alloc] init];
+    __strong static UAPushSender *instance;
+    
+    if (!instance)
+        instance = [UAPushSender new];
+    
+    return instance;
+}
+
+- (void)dealloc {
+    
+    self.soundID = nil;
+    self.alertString = nil;
+    self.deviceID = nil;
+    
+    [super dealloc];
 }
 
 // change it for your own propose
