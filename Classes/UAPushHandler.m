@@ -12,7 +12,10 @@
 @implementation UAPushHandler
 
 - (void)dealloc {
+    
     self.lastPayload = nil;
+    
+    [super dealloc];
 }
 
 - (void)displayNotificationAlert:(NSString *)alertMessage {
@@ -25,6 +28,7 @@
                                               cancelButtonTitle: @"OK"
                                               otherButtonTitles: nil];
         [alert show];
+        [alert release];
     }
 }
 
@@ -45,6 +49,7 @@
                                               cancelButtonTitle: @"OK"
                                               otherButtonTitles: nil];
         [alert show];
+        [alert release];
     }
 }
 
@@ -66,6 +71,7 @@
             // UALOG(@"Received a foreground alert with a sound: %@", sound);
             AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath:path], &soundID);
             AudioServicesPlayAlertSound(soundID);
+            AudioServicesDisposeSystemSoundID(soundID);
         } else {
             // UALOG(@"Received an alert with a sound that cannot be found the application bundle: %@", sound);
         }
