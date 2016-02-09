@@ -18,7 +18,7 @@
 
 + (instancetype)sharedInstance {
     
-    __strong static UAPushSender *instance;
+    static UAPushSender *instance = nil;
     
     if (!instance)
         instance = [UAPushSender new];
